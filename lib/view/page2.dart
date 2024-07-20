@@ -150,7 +150,7 @@ class PageTwo extends StatelessWidget {
                   ElevatedButton(
                     onPressed: () {},
                     style: ElevatedButton.styleFrom(
-                        minimumSize: const Size(32, 27),
+                        minimumSize: const Size(32, 30),
                         backgroundColor: const Color(0xff1d8ffd)),
                     child: const Text(
                       'Invite',
@@ -161,7 +161,7 @@ class PageTwo extends StatelessWidget {
               ),
             ),
             const SizedBox(
-              height: 30,
+              height: 40,
             ),
             Center(
               child: Text(
@@ -169,12 +169,17 @@ class PageTwo extends StatelessWidget {
                 style: TextStyle(color: Mycolor.tertiarycolor),
               ),
             ),
-            FloatingActionButton(
-              backgroundColor: Mycolor.secondarycolor,
-              onPressed: () {},
-              child: Icon(Icons.add),
-            )
+            // FloatingActionButton.small(onPressed: onPressed),
           ],
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      floatingActionButton: FloatingActionButton.small(
+        backgroundColor: Mycolor.secondarycolor,
+        onPressed: () {},
+        child: Icon(
+          Icons.add,
+          color: Mycolor.primarycolor,
         ),
       ),
     ));
