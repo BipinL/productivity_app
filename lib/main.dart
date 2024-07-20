@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:productivity_app/view/page1.dart';
 import 'package:productivity_app/view/page2.dart';
+import 'package:productivity_app/view/page3.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const PageTwo(),
+      home: const PageThree(),
     );
   }
 }
